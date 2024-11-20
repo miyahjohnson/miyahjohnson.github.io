@@ -20,13 +20,16 @@ var init = function (window) {
         ////////////////////////////////////////////////////////////
         
         // TODO 1 : Declare and initialize our variables
-
+        var circle; // variable to hold a single circle when creating circles / iterating
+        var circles = []; // variable to store all circles in one Array
 
         // TODO 2 : Create a function that draws a circle 
-        
+        drawCircle();
 
         // TODO 3 / 7 : Call the drawCircle() function 
-
+        for (let i = 0; i < 100; i++) {
+            drawCircle();  
+drawCircle();
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -37,12 +40,27 @@ var init = function (window) {
         In each frame, for every circle, it should redraw that circle
         and check to see if it has drifted off the screen.         
         */
-        function update() {
+        function update(for (let i = 0; i < circles.length; i++) {
+            let circle = circles[i];
+            console.log(`Circle ${i + 1}:`);
+            console.log(`  Position: (${circle.x}, ${circle.y})`);
+            console.log(`  Radius: ${circle.radius}`);
+          }) {
             // TODO 4 : Update the circle's position //
-
+            /*physikz.updatePosition(/* Your Bracket Notation HERE );
+            physikz.updatePosition(/* Your Bracket Notation HERE );
+            physikz.updatePosition(/* Your Bracket Notation HERE );
+            physikz.updatePosition(/* Your Bracket Notation HERE );
+            physikz.updatePosition(/* Your Bracket Notation HERE );
+          }
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-           
+            game.checkCirclePosition(/* Your Bracket Notation HERE );
+            game.checkCirclePosition(/* Your Bracket Notation HERE );
+            game.checkCirclePosition(/* Your Bracket Notation HERE );
+            game.checkCirclePosition(/* Your Bracket Notation HERE );
+            game.checkCirclePosition(/* Your Bracket Notation HERE );*/
+            
 
             // TODO 9 : Iterate over the array
            
